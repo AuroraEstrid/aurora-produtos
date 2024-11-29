@@ -38,7 +38,8 @@ carousel.addEventListener('mousemove', (e) => {
 });
 
 function adicionarItens() {
-    for (let i = 0; i < links.length; i++) {
+    let cont = links.length-1;
+    for (let i = cont; i >= 0; i--) {
         let novaDiv = document.createElement("div");
         novaDiv.classList.add("carouselItem", "item-" + i);
 
