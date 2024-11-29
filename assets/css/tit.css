@@ -1,0 +1,39 @@
+#tit {
+    >div {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        .carousel {
+            height: 320px;
+
+            .carouselItem {
+                min-width: 320;
+                max-width: 320;
+
+                & img {
+                    width: 100%;
+                }
+
+                & a {
+                    text-decoration: none;
+                    color: inherit;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    
+                }
+
+                & figure {
+                    margin: 0;
+
+                    & h3 {
+                        font-size: 24px;
+                        margin: 10px 0;
+                        color: black;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}

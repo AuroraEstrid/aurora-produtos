@@ -1,0 +1,31 @@
+.carousel {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    cursor: grab;
+    user-select: none; /* Desativa a seleção de texto */ 
+    -webkit-user-drag: none; /* Desativa o arrasto das imagens no Webkit (Safari, Chrome) */ 
+    -webkit-touch-callout: none; /* Evita que o menu de toque apareça no iOS */
+
+    &:active {
+        cursor: grabbing;
+    }
+
+    .corouselItems {
+        display: flex;
+        flex-direction: row;
+        max-height: max-content;
+        gap: 20px;
+
+        & img {
+            min-width: 15vw;
+            transition: transform 0.3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    
+}
